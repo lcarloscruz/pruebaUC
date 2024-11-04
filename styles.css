@@ -317,6 +317,612 @@ body {
     margin-right: 5px;
 }
 
+/* Estilos Formulario recopilación de Datos */
+
+/* Líneas naranjas */
+.orange-line {
+    height: 1px;
+    background-color: var(--primary-color);
+    width: 100%;
+}
+
+/* Contenedor principal */
+.contact-section {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-title {
+    color: var(--secondary-color);
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Filas del formulario */
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.form-input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.9em;
+}
+
+/* Fila de selectores */
+.selectors-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+    font-size: 0.8em; /* Texto más pequeño en las etiquetas */
+}
+
+.form-select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 0.9em;
+}
+
+/* Footer del formulario */
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.policy-text {
+    font-size: 0.8em; /* Texto más pequeño para la política */
+    color: #666;
+}
+
+.policy-link {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.policy-link:hover {
+    text-decoration: underline;
+}
+
+/* Botón de envío más pequeño */
+.submit-button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #e65500;
+}
+
+/* Sección de Titulaciones */
+.titulaciones {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.titulaciones-title {
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.titulaciones-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Tarjetas de Titulación */
+.titulacion-card {
+    background-color: #f8f8f8;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 300px;
+}
+
+.nivel {
+    color: var(--secondary-color);
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.carrera {
+    color: var(--secondary-color);
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.detalles {
+    margin: 20px 0;
+    color: #666;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.detalles p {
+    margin-bottom: 8px;
+}
+
+.tarifa-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-top: auto;
+    font-size: 0.9em;
+}
+
+.tarifa-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .titulaciones-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Sección Campo Laboral */
+.campo-laboral {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.campo-laboral-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Estilos del texto */
+.campo-title {
+    color: var(--secondary-color);
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.campo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.campo-list li {
+    margin-bottom: 15px;
+    color: #333;
+    position: relative;
+    padding-left: 20px;
+    line-height: 1.4;
+}
+
+.campo-list li::before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+}
+
+/* Estilos de las imágenes */
+.campo-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.campo-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .campo-laboral-container {
+        grid-template-columns: 1fr;
+    }
+
+    .campo-images {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .campo-images {
+        grid-template-columns: 1fr;
+    }
+
+    .campo-img {
+        height: 250px;
+    }
+
+    .campo-title {
+        font-size: 1.8em;
+    }
+}
+
+/* Efecto hover en las imágenes */
+.campo-img {
+    transition: transform 0.3s ease;
+}
+
+.campo-img:hover {
+    transform: scale(1.02);
+}
+
+/* Sección Matrículas Abiertas */
+/* Contenedor exterior para centrar el recuadro */
+.matriculas-wrapper {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.matriculas {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.matriculas-container {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.matriculas-title {
+    color: var(--secondary-color);
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.matriculas-text {
+    color: #333;
+    line-height: 1.6;
+    font-size: 1.1em;
+    margin: 0;
+}
+
+/* Sección de Perfil */
+.perfil-section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.perfil-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.perfil-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Estilos columna izquierda */
+.perfil-left {
+    padding-right: 20px;
+}
+
+.perfil-image-container {
+    margin-bottom: 25px;
+}
+
+.perfil-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.perfil-title {
+    color: var(--primary-color);
+    font-size: 2em;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.perfil-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin-top: 10px;
+}
+
+.perfil-description {
+    color: #333;
+    line-height: 1.6;
+    font-size: 1em;
+}
+
+/* Estilos columna derecha */
+.experticia-title {
+    color: var(--secondary-color);
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.experticia-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.experticia-list li {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+    color: #333;
+}
+
+.experticia-list li::before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+/* Botón de descarga */
+.download-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #2c77d0;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.download-icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.download-button:hover {
+    background-color: #1c5aa0;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .perfil-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .perfil-left {
+        padding-right: 0;
+    }
+}
+
+/* Footer Styles */
+.main-footer {
+    background-color: #4d555c;
+    color: white;
+    padding: 40px 0 0 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    gap: 40px;
+}
+
+/* Footer Left Section */
+.footer-logo {
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.footer-legal, 
+.footer-notification {
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.footer-email {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Social Media Section */
+.social-section {
+    margin-top: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s ease;
+}
+
+.social-icon:hover img {
+    opacity: 0.8;
+}
+
+/* Sedes Information */
+.sede-info {
+    margin-bottom: 30px;
+}
+
+.sede-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.sede-info p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+/* Certifications */
+.certifications {
+    text-align: right;
+}
+
+.cert-image {
+    height: 150px;
+    margin-left: 10px;
+}
+
+.cert-numbers {
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+/* Important Links Section */
+.footer-links {
+    background-color: #434a51;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.links-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.links-container h4 {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.links-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.links-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+.links-list a:hover {
+    color: var(--primary-color);
+}
+
+.btn-trabaja {
+    background-color: var(--primary-color);
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+
+.btn-trabaja:hover {
+    background-color: #e65500;
+    color: white !important;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .footer-right {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    .certifications {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .links-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .footer-legal,
+    .footer-notification {
+        text-align: center;
+    }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .top-bar ul {
@@ -349,5 +955,74 @@ body {
     
     .info-item {
         font-size: 0.85em;
+    }
+}
+
+{
+    .form-row {
+        flex-direction: column;
+    }
+    
+    .selectors-row {
+        flex-direction: column;
+    }
+    
+    .form-footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .submit-button {
+        width: auto;
+    }
+}
+
+{
+    .titulaciones-container {
+        grid-template-columns: 1fr;
+    }
+
+    .titulacion-card {
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .titulaciones-title {
+        font-size: 2em;
+    }
+}
+
+ {
+    .matriculas-wrapper {
+        margin: 40px auto;
+    }
+
+    .matriculas {
+        padding: 30px 20px;
+    }
+
+    .matriculas-title {
+        font-size: 2em;
+    }
+
+    .matriculas-text {
+        font-size: 1em;
+    }
+}
+
+{
+    .perfil-section {
+        padding: 40px 0;
+    }
+
+    .perfil-title, 
+    .experticia-title {
+        font-size: 1.8em;
+    }
+
+    .download-button {
+        width: 100%;
+        justify-content: center;
     }
 }
